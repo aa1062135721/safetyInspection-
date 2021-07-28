@@ -1,0 +1,33 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+@import 'uview-ui/theme.scss';
+
+.indexTop {
+	background: #FFFFFF;
+	.u-search {
+		padding: 0 40rpx;
+	}
+	.tabs {
+		margin-top: 16rpx;
+		background-color: #FFFFFF;
+		/deep/ .u-tab-item {
+			height: 77rpx !important;
+			line-height: 64rpx !important;
+			font-size: 32rpx !important;
+		}
+		/deep/ .u-tab-bar {
+			width: 45rpx !important;
+			bottom: -6rpx;
+			height: 4rpx;
+		}
+	}
+}
+
+.noCentent {
+	text-align: center;
+	margin-top: 60rpx;
+	font-size: 32rpx;
+	color: #333;
+}

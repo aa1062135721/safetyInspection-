@@ -1,0 +1,122 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index", // 登录页
+			"style": {
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index", // 首页
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mine/aboutUs", // 关于我们
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pageA",
+		"pages": [{
+			"path": "index/ereport", // 事件上报
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/reportSuccess", // 上报成功
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/reportRecords", // 上报记录
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/eventDetails", // 事件详情
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/task", // 巡检任务
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/taskDetail", // 任务详情
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/scanCheck", // 扫一扫
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/inspectionRecord", // 巡检记录
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "index/inspectionDetail", // 巡检详情
+			"style": {
+				"navigationBarTitleText": "安全巡检",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "安全巡检",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#909399",
+	    "selectedColor": "#2FA1BE",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/icon_home.png",
+	        "selectedIconPath": "static/icon_homeChoose.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/mine/index",
+	        "iconPath": "static/icon_my.png",
+	        "selectedIconPath": "static/icon_myChoose.png",
+	        "text": "我的"
+	    }]
+	}
+}
